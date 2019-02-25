@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/workspace/myrobot/script/hello.cpp" "/home/workspace/myrobot/build/CMakeFiles/hello.dir/script/hello.cpp.o"
+  "/home/kpurohit/projects/udacity-course/gazeboBasics/script/hello.cpp" "/home/kpurohit/projects/udacity-course/gazeboBasics/build/CMakeFiles/hello.dir/script/hello.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/gazebo-7"
-  "/usr/include/sdformat-4.4"
+  "/usr/include/sdformat-4.0"
   "/usr/include/ignition/math2"
   "/usr/include/OGRE"
   "/usr/include/OGRE/Terrain"
