@@ -9,7 +9,7 @@ ros::ServiceClient client;
 void drive_robot(float lin_x, float ang_z)
 {
   // Request a service and pass the velocities to it to drive the robot
-    ROS_INFO_STREAM("Driving to direction of ball");
+  ROS_INFO_STREAM("Driving to direction of ball");
 
   ball_chaser::DriveToTarget srv;
   srv.request.linear_x = lin_x;
@@ -29,7 +29,7 @@ void process_image_callback(const sensor_msgs::Image img)
   // Then, identify if this pixel falls in the left, mid, or right side of the image
   // Depending on the white ball position, call the drive_bot function and pass velocities to it
   // Request a stop when there's no white ball seen by the camera
-  for (int i = 0; i < img.height * img.step; i++) {
+  for (int i = 0; i < img.height * img.step; i+=3) {
     if (img.data[i] == white_pixel && img.data[i+1] == white_pixel && img.data[i+2] == white_pixel) {
       int horizontalness = (i/3) % img.width;
       // if the pixel is in the left third, turn left
