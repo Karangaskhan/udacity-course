@@ -41,8 +41,11 @@ void process_image_callback(const sensor_msgs::Image img)
         lin_x = 0.0f;
         ang_z = -0.5f;
       // else straight
-      }else{
+      }else if (horizontalness < 2*img.width/3 && horizontalness > 1*img.width/3){
         lin_x = 0.5f;
+        ang_z = 0.0f;
+      }else{
+        lin_x = 0.0f;
         ang_z = 0.0f;
       }
       break;
