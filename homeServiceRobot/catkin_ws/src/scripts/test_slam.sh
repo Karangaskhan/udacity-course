@@ -1,5 +1,5 @@
 #!/bin/sh
-xterm -e "roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/export/bulk/local-home/kpurohit/projects/udacity-course/homeServiceRobot/catkin_ws/src/map/karanWorld.world" &
+xterm -e "roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/workspace/catkin_ws/src/map/karanWorld.world" &
 sleep 5
 xterm -e "roslaunch turtlebot_gazebo gmapping_demo.launch" &
 sleep 2
