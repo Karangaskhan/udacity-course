@@ -1,3 +1,5 @@
 # Don't track contect of these folders
 build/
 devel/
+build_isolated/
+devel_isolated/
